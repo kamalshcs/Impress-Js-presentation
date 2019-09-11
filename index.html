@@ -20,8 +20,12 @@
 
 
 
-	<title>Impress JS Presentation</title>
+	<title> Presentation</title>
 	<style>
+
+	body{
+		font-family: Lucida sans;
+	}
 		.index-slide{
 			background-color:#00134f ;
 			opacity: 0.7;
@@ -36,6 +40,12 @@
 		width: 1000px;
 		height: 700px;
 	}
+
+	.slide2{
+		width: 700px;
+		height: 200px;
+	}
+
 	.sec{
 		background-color: black;
 		opacity: 0.7;
@@ -49,18 +59,17 @@
      #header p
 			 {  
 			    display:inline;	
-			    padding:8px;		 		
+			    margin:1% 1% 0% 1%;
+			    padding:0%;		 		
 			 }
-	.s2
-	{
-		float:left;
-	}
+	
 
-    .s3
-    {
-    	float:left;
-    }
-
+    .flex-container {
+    	margin-top:2%;
+      display: -webkit-flex;
+      display: flex;
+      justify-content: center;
+      }
 
 
 
@@ -74,134 +83,133 @@
 
 
 
-
-	<div class="step slide"  data-x=1400 data-y=0  >
-	
-	<div class="text-center">
-	<div class="container-fluid" style="background-size: cover;background-color:lightyellow;">
+<!--slide1-->
+	<div class="step slide"  data-x=0 data-y=0  style="background-color:lightyellow;">
+	<div class="container-fluid" style="background-size: cover;">
 	<br>
-	<p style="color:#b53f45;font-family:Lucida sans;font-size:400%;">
-	What I Learnt...
+	<p style="color:#b53f45;font-family:Lucida sans;font-size:400%;text-align: center;	">
+	Trained in:
+	<br><br>
+	Web Designing
 	</p>
 	</div>
-	</div>
-	<br>
-	<br>
-	<br>
-	<div class="container">
-	<ul >
-	<li style="font-size:250%;font-family:Lucida sans;color:white;">HTML</li>
-	<li style="font-size:250%;font-family:Lucida sans;color:white;">CSS</li>
-	<li style="font-size:250%;font-family:Lucida sans;color:white;">JAVA SCRIPT</li>
-	<li style="font-size:250%;font-family:Lucida sans;color:white;">BOOTSTRAP</li><br>
-	</ul>
-	<div class="col-sm-10">
-	<p style="font-family:Lucida sans;font-size:240%;color:#85a894;background-color:lightyellow;">Press the arrow keys to move the slides back and forth</p>
-	</div>
-    </div>
-
 	</div>
 
 
 <!--slide2-->
+	<div class="step slide"  data-x=1500 data-y=0  style="background-color:lightyellow;">
+	<div class="container-fluid" style="background-size: cover;">
+	<br>
+	<p style="color:#00134f;font-family:Lucida sans;font-size:400%;text-align: center;">What I learnt</p>
+	<ul >
+	<li style="font-size:250%;font-family:Lucida sans;color:grey;">HTML</li>
+	<li style="font-size:250%;font-family:Lucida sans;color:grey;">CSS</li>
+	<li style="font-size:250%;font-family:Lucida sans;color:grey;">JAVA SCRIPT</li>
+	<li style="font-size:250%;font-family:Lucida sans;color:grey;">BOOTSTRAP</li><br>
+	</ul>
+	</div>
+	</div>
+
+
+
+<!--slide3-->
 	<div class="step slide1" data-x=3500 data-y=0 data-z=1000 style="background-color:lightyellow;">
-	
-	<div class="s2">
-	
-	<div class="text-center">
-	<div class="container">
-	<div class="col-sm-offset-2 col-sm-6 col-sm-offset-4">
-	<div id="header">
+	<div class="flex-container" id="header">
     <p style="font-family: Lucida sans;color:#00134f;background-color:#fce4a8;font-size:400%;font-weight: bold;">H</p>
 	<p style="font-family: Lucida sans;color:#3e6b7e;background-color:#fce4a8;font-size:400%;font-weight: bold;">T</p>
 	<p style="font-family: Lucida sans;color:#85a894;background-color:#fce4a8;font-size:400%;font-weight: bold;">M</p>
 	<p style="font-family: Lucida sans;color:#b53f45;background-color:#fce4a8;font-size:400%;font-weight: bold;">L</p>
 	</div>
+	<br>
+	<div class="flex-container" style="color:grey;font-size:200%;margin:0% 10%;text-align: justify;">
+	<p>HTML stands for Hyper Text Markup Language. A markup language is a set of markup tags. HTML documents are described by HTML tags. Each HTML tag describes different document content.<br><br>
+	HTML elements are written with a start tag, with an end tag, with the content in between:<br>
+	< tagname > content < /tagname >  </p>
 	</div>
-	</div>
-	</div>
-    <br>
-    <br>
-	<div class="container-fluid" style="background-size: cover;">
-	<div class="col-sm-12" style="background-size: cover;">
-	
+	<div class="flex-container">
 	<ul>
-		<li style="color:grey;font-size:250%;">I Learnt the basic structure</li>
-		<li style="color:grey;font-size:250%;">How to use these elements and tags in JS and Jquery</li>
-		<li style="color:grey;font-size:250%;">To illustrate my work I'll be giving a few examples of some<br> webpages
-		I worked on </li>
-		<br>
-		<br>
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/design/" style="text-decoration:underline;color:#85a894;text">Implementation1>></a></p>
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/huddle/" style="text-decoration:underline;color:#85a894;text">Implementation2>></a></p>
+		<li style="color:grey;font-size:200%;">Learnt about the basic structure</li>
+		<li style="color:grey;font-size:200%;">How to use elements and tags in JavaScript and Jquery</li>
+	</ul>
+	</div>
+ 	</div>
+ 
+
+
+
+
+<!--slide4-->
+	<div class="step slide1" data-x=5500 data-y=0 data-z=1000 style="background-color:lightyellow;">	
+	<div class="flex-container" style="color:grey;font-size:200%;margin:2% 10% 0% 10%;text-align: justify;">
+	<p>HTML is a markup language for describing web documents (web pages).</p>
+	</div>
+	<div class="flex-container">
+	<ul style="color:grey;font-size:200%;margin: 0% 8%;">
+	<li>The DOCTYPE declaration defines the document type to be HTML.
+	<li>The text between < html > and < /html > describes an HTML document.
+	<li>The text between < head > and < /head > provides information about the document.
+	<li>The text between < title > and < /title > provides a title for the document.
+	<li>The text between < style > and < /style > describes the styling.	
+	<li>The text between < body > and < /body > describes the visible page content.
+	</ul>
+	</div>			
+	<p style="font-family:Lucida sans;font-size:200%;text-align: center;"><a href="https://kamalshcs.github.io/design/" style="text-decoration:underline;color:#85a894;text">Implementation>></a></p>
 
 	</ul>
-	
 	</div>
-	</div>
-	<br>
-	<br>
-
+ 	
    
-
-
-
-
-    </div>
-    
-    </div>
-
-
 	
-<!--slide3-->	
+<!--slide5-->	
 
-<div class="step slide1" data-x=5500 data-y=0 data-z=1000 style="background-color:lightyellow;">
-	<div id="header">
-	<div class="s3">
-	<div class="container">
-	<div class="text-center">
-	<div class="col-sm-offset-2 col-sm-6 col-sm-offset-4">
-	<div id="header">
-	<p style="font-family: Lucida sans;color:#00134f;background-color:#fce4a8;font-size:400%;font-weight: bold;">C</p>
+<div class="step slide1" data-x=7500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+	<div class="flex-container" id="header">
+    <p style="font-family: Lucida sans;color:#00134f;background-color:#fce4a8;font-size:400%;font-weight: bold;">C</p>
 	<p style="font-family: Lucida sans;color:#3e6b7e;background-color:#fce4a8;font-size:400%;font-weight: bold;">S</p>
 	<p style="font-family: Lucida sans;color:#85a894;background-color:#fce4a8;font-size:400%;font-weight: bold;">S</p>
-	<br>         
-	</div>
-	</div>
-	</div>
-    </div>
-    </div>
 	</div>
     <br>
-    <div class="text-center">
-	<p style="font-family: Lucida sans;font-size: 250%;color:grey;">I studied CSS from the websites referred by Sir.</p>
-    </div>
-    <br>
+    <div class="flex-container" style="color:grey;font-size:200%;margin:0% 10%;text-align: justify;">
+	<p>CSS is a stylesheet language that describes the presentation of an HTML (or XML) document.
+	CSS describes how elements must be rendered on screen, on paper, or in other media. </p>
+	</div>
+    <div class="flex-container" style="margin: 0% 8%;">
     <ul>
-		<li style="color:grey;font-size:250%;">Learned about the animations in CSS</li>
-		<li style="color:grey;font-size:250%;">Learned about spacing problems</li>
-		<li style="color:grey;font-size:250%;">Learned about web-kit animations</li>
-		<li style="color:grey;font-size:250%;">Learned about maintaining the resposiveness using CSS</li>
-
-		<li style="color:grey;font-size:250%;">Here are a few examples of some webpages
-		I worked on.</li>
-		<br>
-		
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/design/" style="text-decoration:underline;color:#85a894;text">Implementation1>></a></p>
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/project2/" style="text-decoration:underline;color:#85a894;text">Implementation2>></a></p>
+		<li style="color:grey;font-size:200%;">Learned how to use the animations in CSS.</li>
+		<li style="color:grey;font-size:200%;">Learned about the alignment properties(padding, margins).</li>
+		<li style="color:grey;font-size:200%;">Learned about web-kit animations.</li>
+		<li style="color:grey;font-size:200%;">Learned about grids amd flex-boxes.</li>
+		<li style="color:grey;font-size:200%;">Learned about maintaining the resposiveness using CSS using media queries.</li>
 	</ul>
+	</div>	
 </div>
-   
-	<!--slide4-->
-	<div class="step slide1" data-x=7500 data-y=0 data-z=1000 style="background-color:lightyellow;">
-	<div id="header">
-	
-	<div class="s5">
-	<div id="header">
-	<div class="text-center">
-	<div class="container">
-	<div class=" col-sm-offset-2 col-sm-7 ">
-	<div id="header">
+
+
+
+<!--slide6-->
+<div class="step slide1" data-x=9500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+	<div class="flex-container" id="header">
+    <img src="css.png" alt="some text" style="margin: 5% 0% 0% 0%; "></img>
+	</div>
+    <br>
+    <div class="flex-container" style="color:grey;font-size:200%;margin:0% 10%;text-align: justify;">
+	<ul>
+	<li>The selector points to the HTML element you want to style.</li>
+	<li>The declaration block contains one or more declarations separated by semicolons.</li>
+	<li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+	<li>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.</li>
+	</ul>
+	</div>
+    <p style="font-family:Lucida sans;font-size:200%;text-align: center;"><a href="https://kamalshcs.github.io/project2/" style="text-decoration:underline;color:#85a894;text">Implementation>></a></p>
+</div>
+
+
+
+
+	<!--slide7-->
+	<div class="step slide1" data-x=11500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+	<div class="flex-container" id="header">
+
 	<p style="font-family: Lucida sans;color:#00134f;background-color:#fce4a8;font-size:400%;font-weight: bold;">J</p>
 	<p style="font-family: Lucida sans;color:#3e6b7e;background-color:#fce4a8;font-size:400%;font-weight: bold;">A</p>
 	<p style="font-family: Lucida sans;color:#85a894;background-color:#fce4a8;font-size:400%;font-weight: bold;">V</p>
@@ -212,47 +220,62 @@
 	<p style="font-family: Lucida sans;color:#85a894;background-color:#fce4a8;font-size:400%;font-weight: bold;">I</p>
 	<p style="font-family: Lucida sans;color:#b53f45;background-color:#fce4a8;font-size:400%;font-weight: bold;">P</p>
 	<p style="font-family: Lucida sans;color:#00134f;background-color:#fce4a8;font-size:400%;font-weight: bold;">T</p>
-	<br>
+	</div><br>
+
 	
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	</div>
-	<br>
-	<br>
-   	<div class="text-center">
-  <p style="font-family: Lucida sans;font-size: 250%;color:grey;">I studied JS from links and websites referred by Sir and others. </p>
-   </div><br>
+	<div class="flex-container" style="margin:0% 10%;">
+ 	<p style="font-family: Lucida sans;font-size: 200%;color:grey;">JavaScript is the programming language of HTML and the Web.
+	Programming makes computers do what you want them to do.</p>
+   </div>
+
+
+   <div class="flex-container" style="margin:0% 8%;">
     <ul>
-		<li style="color:grey;font-size:250%;">Learned about functions and objects</li>
-		<li style="color:grey;font-size:250%;">Learned a little bit about jQuery</li>
-		<li style="color:grey;font-size:250%;">Learned about DOM Manipulation</li>
-		<li style="color:grey;font-size:250%;">Here are a few examples of some webpages
-		I worked on.</li>
-		<br>
+		<li style="color:grey;font-size:200%;">Learned about functions and objects a little bit about jQuery.</li>
+		<li style="color:grey;font-size:200%;">Learned about DOM Manipulation.</li>
+		<li style="color:grey;font-size:200%;">Learned about javascript events.</li><br>
+	</ul>
+	</div>	
+	<div class="flex-container" style="margin:0% 8%;">
+	<p style="color:grey;font-size:200%;">HTML events are "things" that happen to HTML elements.
+	When JavaScript is used in HTML pages, JavaScript can "react" on these events.</p>	
+	</div>
+
 		
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/tictac/" style="text-decoration:underline;color:#85a894;text">Implementation1>></a></p><br>
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/trash/" style="text-decoration:underline;color:#85a894;text">Implementation2>></a></p><br>
-		<p style="font-family:Lucida sans;font-size:240%;color:grey;"><a href="https://kamalshcs.github.io/selectindex/" style="text-decoration:underline;color:#85a894;text">Implementation3>></a>(using selectIndex)</p>
-</ul>
-	</div>
-
 	</div>
 
 
 
-<!--slide5-->
-<div class="step slide1" data-x=9500 data-y=0 data-z=1000 style="background-color:lightyellow;">
-    <div id="header">
+
+<!--slide8-->
+	<div class="step slide1" data-x=13500 data-y=0 data-z=1000 style="background-color:lightyellow;">
 	
-	<div class="s5">
-	<div id="header">
-	<div class="text-center">
-	<div class="container">
-	<div class="col-sm-offset-2 col-sm-7">
-	<div id="header">
+	<div class="flex-container" style="margin:4% 8%;">
+ 	<p style="font-family: Lucida sans;font-size: 200%;color:grey;">document.getElementById("demo").innerHTML = "Hello JavaScript";</p>
+   </div>
+
+
+   <div class="flex-container" style="margin:0% 8%;">
+    <p style="font-family: Lucida sans;font-size: 200%;color:grey;">This example uses the method to "find" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript".</p>
+	</div>	
+<br><br>
+	<div style="margin:0% 8%;">
+		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/tictac/" style="text-decoration:underline;color:#85a894;">Implementation1>></a></p>
+	</div>
+
+	<div style="margin:0% 8%;">
+		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/trash/" style="text-decoration:underline;color:#85a894;">Implementation2>></a></p>
+	</div>
+	
+	<div style="margin:0% 8%;">	
+		<p style="font-family:Lucida sans;font-size:240%;color:grey;"><a href="https://kamalshcs.github.io/selectindex/" style="text-decoration:underline;color:#85a894;text">Implementation3>></a>(using selectIndex)</p> 
+	</div>
+</div>
+
+
+<!--slide9-->
+<div class="step slide1" data-x=15500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+    <div id="header" class="flex-container">
 	<p style="font-family: Lucida sans;color:#00134f;background-color:#fce4a8;font-size:400%;font-weight: bold;">B</p>
 	<p style="font-family: Lucida sans;color:#3e6b7e;background-color:#fce4a8;font-size:400%;font-weight: bold;">O</p>
 	<p style="font-family: Lucida sans;color:#85a894;background-color:#fce4a8;font-size:400%;font-weight: bold;">O</p>
@@ -261,54 +284,82 @@
 	<p style="font-family: Lucida sans;color:#3e6b7e;background-color:#fce4a8;font-size:400%;font-weight: bold;">T</p>
 	<p style="font-family: Lucida sans;color:#b53f45;background-color:#fce4a8;font-size:400%;font-weight: bold;">R</p>
 	<p style="font-family: Lucida sans;color:#85a894;background-color:#fce4a8;font-size:400%;font-weight: bold;">A</p>
-	<p style="font-family: Lucida sans;color:#b53f45;background-color:#fce4a8;font-size:400%;font-weight: bold;">P</p>
-	<br>
-	<br>
-	</div>
-	</div>
-	</div>
-	</div>
+	<p style="font-family: Lucida sans;color:#b53f45;background-color:#fce4a8;font-size:400%;font-weight: bold;">P</p>	
     </div>
-	</div>
+
 	<br>
+
 	
-	<div class="text-center">
-	<p style="font-family: Lucida sans;color:grey;font-size:250%;color:grey;">
-	Bootstrap is responsive and a front-end framework, which is developed along with CSS, JavaScript, and HTML. 
+	<div class="flex-container">
+	<p style="font-family: Lucida sans;color:grey;font-size:200%;color:grey;margin:0% 8% ">
+	Bootstrap is responsive and a front-end framework, which is developed along with CSS, JavaScript, and HTML. Bootstrap includes HTML and CSS based design templates for typography, forms, buttons, tables, navigation, modals, image carousels and many other, as well as optional JavaScript plugins.
 	</p>
 	</div>
-	<br>
-	<br>
+	<br><br>	
+	<div class="flex-container">
 	 <ul>
-		<li style="color:grey;font-size:250%;">Learned about inbuilt functionalities</li>
-		<li style="color:grey;font-size:250%;">Learned about the responsiveness of an html page</li>
-		<li style="color:grey;font-size:250%;">Tried uisng it on other web pages as well</li>
-		<li style="color:grey;font-size:250%;">Here is an example of a webpage I worked on.</li>
+		<li style="color:grey;font-size:200%;">Learned about inbuilt functionalities</li>
+		<li style="color:grey;font-size:200%;">Learned about the responsiveness of an html page</li>
+		<li style="color:grey;font-size:200%;">Here is an example of a webpage I worked on.</li>
+	</ul>
+	<li 
+	</div>
 		<br>
 		
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/design/" style="text-decoration:underline;color:#85a894;text">Implementation1>></a></p><br>
-		<p style="font-family:Lucida sans;font-size:240%;"><a href="https://kamalshcs.github.io/project2/" style="text-decoration:underline;color:#85a894;text">Implementation2>></a></p>
-</ul>
-	</div>
 </div>
 
-<div class="step slide1" data-x=11500 data-y=0 data-z=1000 >
-<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<br>
-	<div class="text-center">
-	<div class="container-fluid" style="background-size: cover;background-color: lightyellow;padding:10px;">
-	<br>
-	<p style="color:#3e6b7e;background-color:#fce4a8;font-family:Lucida sans;font-size:400%;">
+
+
+
+<!--slide10-->
+	<div class="step slide1" data-x=17500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+	
+	<div class="flex-container" style="margin:2% 8% 0% 8%;">
+ 	<img src="bootstrap.png" alt="sometxt">
+   </div>
+
+
+   <div class="flex-container" style="margin:0% 10%;text-align: justify;">
+    <p style="font-family: Lucida sans;font-size: 200%;color:grey;">Bootstrap's grid system allows up to 12 columns across the page.Bootstrap's grid system is responsive, and will re-arrange automatically depending on screen size.<br>The Bootstrap grid system has four classes:</p>
+	</div>	
+	<div style="margin:0% 8%;">
+	<ul>
+    <li style="font-family: Lucida sans;font-size: 200%;color:grey;">xs (for phones)
+	<li style="font-family: Lucida sans;font-size: 200%;color:grey;">sm (for tablets)
+	<li style="font-family: Lucida sans;font-size: 200%;color:grey;">md (for desktops)
+	<li style="font-family: Lucida sans;font-size: 200%;color:grey;">lg (for larger desktops)
+    </ul>
+	</div>	
+
+	
+</div>
+
+
+
+
+
+
+<!--slide11-->
+<div class="step slide2" data-x=19500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+
+	
+	<div class="flex-container" style="margin:%">
+	<p style="color:#85a894;font-family:Lucida sans;font-size:300%;"><a href="https://nandiniprashar.github.io/PFA/" style="text-decoration:underline;color:#85a894;">Implementation of Project>></a></p>
+    
+	</div>	
+
+</div>
+
+
+<!--slide12-->
+
+<div class="step slide2" data-x=21500 data-y=0 data-z=1000 style="background-color:lightyellow;">
+
+	
+	<div class="flex-container" style="margin:%">
+	<p style="color:#85a894;font-family:Lucida sans;font-size:400%;">
 	Thank You!</p>
     
-	</div>
 	</div>	
 
 </div>
